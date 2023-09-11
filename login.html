@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <div class="container">
+        <div class="login-box">
+            <h1>Login</h1>
+            <form class="login-form" action="process_login.php" method="POST">
+                <div class="form-group">
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+            <p>or</p>
+            <div class="social-login">
+                <a class="social-icon" href="#" target="_blank" class="active">Login with Google<ion-icon name="logo-Google"></ion-icon></a>
+                <a class="social-icon" href="#" target="_blank" class="active">Login with Microsoft account <ion-icon name="logo-microsoft"></ion-icon></a>
+                <!--<a href="#" class="facebook">Login with Facebook</a>-->
+            </div>
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+    </div>
+</body>
+</html>
